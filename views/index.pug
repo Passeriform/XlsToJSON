@@ -1,0 +1,45 @@
+h1 Spreadsheet to JSON Converter API
+h2 Upload XLS/XLSX document
+
+b
+  | URL:
+  span &nbsp;&nbsp;&nbsp;http://usxls2.herokuapp.com/uploadXLS
+  br
+
+b
+  | Request Type:
+  span &nbsp;&nbsp;&nbsp;POST
+  br
+  
+b
+  | Body:
+  span &nbsp;&nbsp;&nbsp;uploadFile
+  br
+  
+b
+  | Return Type:
+  span &nbsp;&nbsp;&nbsp;string type file upload id/name
+  br
+
+
+h2 Convert spreadsheet to JSON
+
+b
+  | URL:
+  span &nbsp;&nbsp;&nbsp;http://usxls2.herokuapp.com/getJSON
+  br
+
+b
+  | Request Type:
+  span &nbsp;&nbsp;&nbsp;GET
+  br
+  
+b
+  | Params:
+  span &nbsp;&nbsp;&nbsp;URL (from the uploadXLS route)
+  br
+  
+b
+  | Return Type:
+  span &nbsp;&nbsp;&nbsp;JSON conversion of excel file
+  br

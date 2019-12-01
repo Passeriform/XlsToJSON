@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a6133410-8a9f-40c7-8b3b-e788d15e3dc1",
+		"name": "UrbanStop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "XLS Upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadFile",
+							"type": "file",
+							"src": "/C:/Users/utbh2/Downloads/Internship.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/uploadXLS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploadXLS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON Return",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getJSON?URL=Internship-1575244260876.xlsx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getJSON"
+					],
+					"query": [
+						{
+							"key": "URL",
+							"value": "Internship-1575244260876.xlsx"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
