@@ -49,3 +49,6 @@ locks
 
 # ignore uploaded XML
 public/docs/XML
+
+# keep the directory
+!public/docs/XML/.gitkeep
