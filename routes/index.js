@@ -6,10 +6,7 @@ var xlstojson = require("xls-to-json");
 var xlsxtojson = require("xlsx-to-json");
 
 /* Import Utils */
-const nundef = require('utils/NullUndef');
-const metafetch = require('utils/MetaManip');
 const debugLog = require('utils/DebugLogger');
-require('utils/StringExtensions');
 
 
 /* Custom Options */
